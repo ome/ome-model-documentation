@@ -12,14 +12,9 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-# Substitutions from external build system.
-srcdir = '@sphinx_srcdir@'
-builddir = '@sphinx_builddir@'
-model_version='@model_version@'
 
 import datetime
 import sys, os
-sys.path.insert(0, os.path.abspath(os.path.join(srcdir, '_ext')))
 
 # -- General configuration -----------------------------------------------------
 
@@ -30,8 +25,9 @@ title = project + ' Documentation'
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
-release = 'UNKNOWN'
-version = 'UNKNOWN'
+release = '6.2.3dev0'
+version = release
+model_version = release
 
 # -- General configuration -----------------------------------------------------
 
@@ -40,14 +36,8 @@ version = 'UNKNOWN'
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.)
-extensions = ['sphinx.ext.extlinks', 'edit_on_github']
+extensions = ['sphinx.ext.extlinks']
 
-# Configuration for the edit_on_github extension
-edit_on_github_project = 'ome/ome-model'
-edit_on_github_branch = 'master'
-
-# Add any paths that contain templates here, relative to this directory.
-templates_path = [os.path.abspath(os.path.join(srcdir, '_templates'))]
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -126,9 +116,6 @@ lists_root = 'http://lists.openmicroscopy.org.uk'
 downloads_root = 'https://downloads.openmicroscopy.org'
 help_root = 'http://help.openmicroscopy.org'
 docs_root = 'https://docs.openmicroscopy.org'
-
-# Edit on GitHub prefix
-edit_on_github_prefix = 'docs/sphinx'
 
 extlinks = {
     # Trac links
@@ -250,7 +237,7 @@ html_theme_options = {
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = [os.path.abspath(os.path.join(srcdir, 'themes'))]
+#html_theme_path = [os.path.abspath(os.path.join(., 'themes'))]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -261,7 +248,7 @@ html_theme_path = [os.path.abspath(os.path.join(srcdir, 'themes'))]
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = os.path.abspath(os.path.join(srcdir, 'images/ome.svg'))
+html_logo = os.path.abspath(os.path.join(., 'images/ome.svg'))
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -282,7 +269,7 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = { '**' : ['pagetoc.html', 'relations.html', 'searchbox.html', 'sourcelink.html'] }
+#html_sidebars = { '**' : ['pagetoc.html', 'relations.html', 'searchbox.html', 'sourcelink.html'] }
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
