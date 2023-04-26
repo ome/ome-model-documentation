@@ -37,7 +37,7 @@ title = project + ' Documentation'
 doc_version = '6.3.3dev0' # doc version
 [majornumber, minornumber, patchnumber] = split_release(doc_version)
 version = ".".join(str(x) for x in (majornumber, minornumber))
-model_version = ".".join(str(x) for x in (majornumber, minornumber, patchnumber))
+model_version = "2016-06" # version of the latest schema
 
 # -- General configuration -----------------------------------------------------
 
