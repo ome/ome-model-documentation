@@ -46,8 +46,8 @@ model_version = "2016-06" # version of the latest schema
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.)
+#extensions = ['sphinx.ext.extlinks', 'sphinx_rtd_theme']
 extensions = ['sphinx.ext.extlinks']
-
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -217,33 +217,19 @@ rst_epilog = """
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+#html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'rightsidebar': 'false',
-    'stickysidebar': 'false',
-    'footerbgcolor': '#cfd8dc',
-    'footertextcolor': '#455a64',
-    'sidebarbgcolor': '#cfd8dc',
-    'sidebartextcolor': '#263238',
-    'sidebarlinkcolor': '#455a64',
-    'relbarbgcolor': '#263238',
-    'relbartextcolor': '#ffffff',
-    'relbarlinkcolor': '#ffffff',
-    'bgcolor': '#ffffff',
-    'textcolor': '#37474f',
-    'linkcolor': '#1d8dcd',
-    'visitedlinkcolor': '#1d8dcd',
-    'headbgcolor': '#eceff1',
-    'headtextcolor': '#263238',
-    'headlinkcolor': '#009688',
-    'codebgcolor': '#eceff1',
-    'codetextcolor': '#455a64',
-    'bodyfont': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
-    'headfont': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif'
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 1,
+    'includehidden': True,
+    'titles_only': False
+    
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
