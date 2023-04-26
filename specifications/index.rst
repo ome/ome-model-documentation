@@ -1,6 +1,12 @@
 Compliant file specification
 ============================
 
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+
+    compliant-hcs 
+    minimum
 
 This was developed in conjunction with the April 2010 release of the
 OME-XML Model and the samples have been updated to the June 2016 release.

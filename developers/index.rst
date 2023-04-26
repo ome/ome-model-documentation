@@ -1,6 +1,17 @@
 Developer introduction
 ======================
 
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+
+    using-ome-xml
+    compression
+    sample-files
+    id-and-lsid
+    ome-units
+
+
 The OME Data Model is now decoupled from the Bio-Formats code repository and
 available as a
 `stand-alone ome-model GitHub repository <https://github.com/ome/ome-model>`_.

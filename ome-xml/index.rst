@@ -1,6 +1,13 @@
 The OME-XML format
 ==================
 
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+
+    ../ome-tiff/tools
+    java-library
+
 OME-XML is a `file format <https://en.wikipedia.org/wiki/File_format>`_
 for storing microscopy information (both pixels and metadata) using the
 OME Data Model.

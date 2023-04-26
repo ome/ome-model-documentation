@@ -1,6 +1,16 @@
 The OME-TIFF format
 ===================
 
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+
+    file-structure
+    specification
+    code
+    data
+
+
 The OME-TIFF format was created to
 maximize the respective strengths of OME-XML and TIFF. It takes advantage
 of the rich metadata defined in OME-XML while retaining the pixels in

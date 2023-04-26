@@ -2,21 +2,29 @@ Schema version information
 ==========================
 
 
-.. only:: html
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
 
-    - :doc:`june-2016-2`
-    - :doc:`june-2016`
-    - :doc:`january-2015`
-    - :doc:`june-2013`
-    - :doc:`june-2012`
-    - :doc:`june-2011`
-    - :doc:`june-2010`
-    - :doc:`april-2010`
-    - :doc:`september-2009`
-    - :doc:`september-2008`
-    - :doc:`february-2008`
-    - :doc:`june-2007-2`
-    - :doc:`june-2007`
+    transformations
+    june-2016-2
+    june-2016
+    january-2015
+    june-2013
+    june-2012
+    june-2011
+    june-2010
+    april-2010
+    september-2009
+    september-2008
+    february-2008
+    june-2007-2
+    june-2007
+
+.. toctree::
+    :hidden:
+
+    september-2007
 
 
 Information on the version structure
