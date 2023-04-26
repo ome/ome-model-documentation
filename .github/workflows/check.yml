@@ -13,18 +13,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      directory_path:
       sphinx_commands: clean linkcheck # commands to run. Update accordingly
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
       - name: Sphinx install
         run: pip install --upgrade sphinx
-      - name: Set directory
-        run:  |
-          VAR=${{ env.directory_path }}
-          echo "docs_dir="${VAR:-./docs} >> $GITHUB_ENV
-      - name: Build doc
+      - name: Check links
         run: |
-          cd $docs_dir
           make ${{ env.sphinx_commands }}
