@@ -14,7 +14,15 @@
 
 
 import datetime
-import sys, os
+import os
+import re
+import sys
+
+
+def split_release(release):
+    split_release = re.split(r"^([0-9]+)\.([0-9]+)\.([0-9]+)(.*?)$", release)
+    return (int(split_release[1]), int(split_release[2]),
+            int(split_release[3]))
 
 # -- General configuration -----------------------------------------------------
 
@@ -22,12 +30,14 @@ import sys, os
 project = 'OME Data Model and File Formats'
 title = project + ' Documentation'
 
-# The version info for the project you're documenting, acts as replacement for
-# |version| and |release|, also used in various other places throughout the
+
+# The version info for the project you are documenting, acts as replacement for
+# |version| and |model_version|, also used in various other places throughout the
 # built documents.
-release = '6.2.3dev0'
-version = release
-model_version = release
+doc_version = '6.3.3dev0' # doc version
+[majornumber, minornumber, patchnumber] = split_release(doc_version)
+version = ".".join(str(x) for x in (majornumber, minornumber))
+model_version = ".".join(str(x) for x in (majornumber, minornumber, patchnumber))
 
 # -- General configuration -----------------------------------------------------
 
