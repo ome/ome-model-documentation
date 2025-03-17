@@ -324,19 +324,7 @@ if not (sys.version_info[0] == 2 and sys.version_info[1] <= 5):
 
 # Regular expressions that match URIs that should not be checked when doing a linkcheck build
 linkcheck_ignore = [
-    "http://www.definiens.com",
-    "https://www.imagic.ch/",
-    "https://github.com/ome/",
-    "https://strandls.com", # SSL certificate verify failed
     # See https://www.ncbi.nlm.nih.gov/pmc/about/copyright/
     # The PMC web site restricts access by the default Sphinx agent
-    "https://www.ncbi.nlm.nih.gov/pmc/.*",
-    "https://eliceirilab.org/.*", # ConnectTimeoutError
-    "https://www.fei.com/.*", # SSL certificate expired
-    "http://www.perkinelmer.com/", # 500 Error
-    "http://mayachitra.com/", # SSL certificate expired
-    "https://www.cytivalifesciences.com/",
-    "https://www.mediacy.com/", # https://www.digicert.com/ does not trust the issuer, but link is valid
-    "http://www.bitplane.com", # SSL certificate expired
-    "https://imaris.oxinst.com/.*", # SSL certificate expired
+    "https://www.ncbi.nlm.nih.gov/pmc/.*"
 ]
