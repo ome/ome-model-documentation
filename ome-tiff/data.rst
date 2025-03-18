@@ -162,8 +162,11 @@ Artificial datasets
 ^^^^^^^^^^^
 
 All datasets in the following table are single OME-TIFF files generated using
-Bio-Formats ``loci.formats.tools.MakeTestOmeTiff``. Each plane is labeled
-according to its dimensional position for easy testing.
+Bio-Formats ``loci.formats.tools.MakeTestOmeTiff``. Dimensional information
+is included in the pixel data for each plane, for easier testing of plane indexing
+and dimension order. Note that no OME-XML `Plane` elements are populated in these
+examples; see :ref:`modulo-datasets` and :ref:`sub-resolutions` for examples with
+`Plane` elements.
 
 .. list-table::
   :header-rows: 1
