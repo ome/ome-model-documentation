@@ -326,5 +326,7 @@ if not (sys.version_info[0] == 2 and sys.version_info[1] <= 5):
 linkcheck_ignore = [
     # See https://www.ncbi.nlm.nih.gov/pmc/about/copyright/
     # The PMC web site restricts access by the default Sphinx agent
-    "https://www.ncbi.nlm.nih.gov/pmc/.*"
+    "https://www.ncbi.nlm.nih.gov/pmc/.*",
+    "https://www.cytivalifesciences.com/",
+    "http://www.cellimagelibrary.org/"
 ]
