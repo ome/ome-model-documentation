@@ -112,6 +112,9 @@ section of the OME Data Model, derived from the public
 
 See `Neumann B et al. (2010). Phenotypic profiling of the human genome by time-lapse microscopy reveals cell division genes. Nature 464(7289):721 <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3108885/>`__.
 
+
+.. _sub-resolutions:
+
 Sub-resolutions
 ^^^^^^^^^^^^^^^
 
