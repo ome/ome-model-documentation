@@ -41,7 +41,7 @@ OME-TIFF is supported by:
 
 * `BIOVIA <https://www.3ds.com/products-services/biovia/>`_
 * `Bitplane AG <http://www.bitplane.com/>`_
-* `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy/int/home.html>`_
+* `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy/en/home.html>`_
 * `Cytiva <https://www.cytivalifesciences.com/>`_ (formerly GE Healthcare, Applied Precision)
 * `DRVision Technologies LLC <https://www.drvtechnologies.com>`_
 * `Image-Pro by Media Cybernetics, Inc. <https://www.mediacy.com/>`_
