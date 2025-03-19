@@ -65,7 +65,7 @@ with:
 
 .. seealso::
 
-    `BigTIFF file format specification <https://www.awaresystems.be/imaging/tiff/bigtiff.html>`__
+    `BigTIFF file format specification <https://web.archive.org/web/20240706160214/https://www.awaresystems.be/imaging/tiff/bigtiff.html>`__
 
 Modifying a TIFF comment
 ------------------------
