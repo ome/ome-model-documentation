@@ -520,8 +520,9 @@ image plane. Additionally:
 - the IFD offsets of pyramidal levels must neither be referenced in the primary
   chain of IFDs derived from the first IFD of the TIFF file nor be referenced
   in a :ref:`TiffData <tiffdata>` element of the OME-XML metadata,
-- the NewSubFileType TIFF tag 254 for each pyramidal level should be set to 1
-  to distinguish full-resolution planes from downsampled planes.
+- the bit 0 of the NewSubFileType TIFF tag for each pyramidal level should be set
+  to 1 to distinguish full-resolution planes from downsampled planes. The bit 1 of the
+  NewSubFileType TIFF tag may be set to either 0 or 1.
 
 The planes of largest resolutions should be organized into tiles rather than
 strips as described in the TIFF_ specification and may be compressed using any
