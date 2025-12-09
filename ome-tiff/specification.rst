@@ -17,7 +17,7 @@ An OME-TIFF dataset consists of:
   `BigTIFF format <https://web.archive.org/web/20240706160214/https://www.awaresystems.be/imaging/tiff/bigtiff.html>`_
   with one of these same file extensions or a BigTIFF-specific
   extension ``.ome.tf2``, ``.ome.tf8`` or ``.ome.btf``
-- a string of OME-XML metadata embedded in the ImageDescription tag of the
+- a string of OME-XML metadata embedded in the ImageDescription tag (270) of the
   first IFD (Image File Directory) of each file. The XML string must be UTF-8
   encoded.
 
@@ -512,7 +512,7 @@ Each sub-resolution must be stored in the same IFD as the full-resolution
 image plane. Additionally:
 
 - the offsets of all sub-resolutions IFDs must be referenced from the IFD of
-  the full-resolution plane using the SubIFDs TIFF extension tag 330 as
+  the full-resolution plane using the SubIFDs TIFF extension tag (330) as
   defined in the TIFF Tech Note 1 of the
   `Adobe PageMaker® 6.0 TIFF Technical Notes <https://web.archive.org/web/20180810205521/https://www.adobe.io/content/udp/en/open/standards/TIFF/_jcr_content/contentbody/download_1704706507/file.res/TIFFPM6.pdf>`_.
   The list of sub-resolution offsets must be ordered by plane size from
@@ -520,8 +520,9 @@ image plane. Additionally:
 - the IFD offsets of pyramidal levels must neither be referenced in the primary
   chain of IFDs derived from the first IFD of the TIFF file nor be referenced
   in a :ref:`TiffData <tiffdata>` element of the OME-XML metadata,
-- the NewSubFileType TIFF tag 254 for each pyramidal level should be set to 1
-  to distinguish full-resolution planes from downsampled planes.
+- the bit 0 of the NewSubFileType TIFF tag (254) for each pyramidal level should be set
+  to 1 to distinguish full-resolution planes from downsampled planes. The bit 1 of the
+  NewSubFileType TIFF tag may be set to either 0 or 1.
 
 The planes of largest resolutions should be organized into tiles rather than
 strips as described in the TIFF_ specification and may be compressed using any
